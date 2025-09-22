@@ -942,6 +942,119 @@ input:focus-visible {
   transform: translateY(-1px);
 }
 
+/* Availability Info */
+.availability-info {
+  margin-top: 16px;
+  padding: 12px 20px;
+  background: #fff3cd;
+  border: 1px solid #ffeaa7;
+  border-radius: 8px;
+  color: #856404;
+}
+
+.link-button {
+  background: none;
+  border: none;
+  color: #007bff;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: inherit;
+  padding: 0 4px;
+}
+
+.link-button:hover {
+  color: #0056b3;
+}
+
+/* Template Badges */
+.template-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.psd-badge {
+  background: #28a745;
+  color: white;
+}
+
+.unavailable-badge {
+  background: #dc3545;
+  color: white;
+}
+
+/* Unavailable Templates */
+.unavailable-section {
+  margin-top: 40px;
+  padding-top: 32px;
+  border-top: 2px solid #e9ecef;
+}
+
+.unavailable-section h3 {
+  text-align: center;
+  color: #6c757d;
+  font-size: 1.5rem;
+  margin-bottom: 24px;
+}
+
+.template-card.unavailable {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.template-card.unavailable .template-preview {
+  position: relative;
+}
+
+.template-card.unavailable .template-preview::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(2px);
+  border-radius: 12px;
+}
+
+.template-overlay.disabled {
+  background: rgba(108, 117, 125, 0.9);
+}
+
+.template-overlay.disabled .select-button {
+  background: #6c757d;
+  cursor: not-allowed;
+}
+
+.template-overlay.disabled .select-button:hover {
+  background: #6c757d;
+  transform: none;
+}
+
+.unavailable-reason {
+  margin: 8px 0;
+  padding: 8px 12px;
+  background: #f8d7da;
+  border-radius: 4px;
+  border: 1px solid #f5c2c7;
+}
+
+.unavailable-reason small {
+  color: #721c24;
+  font-weight: 500;
+}
+
+.feature-tag.disabled {
+  background: #e9ecef;
+  color: #6c757d;
+}
+
 /* Print Styles */
 @media print {
   .editor-header,

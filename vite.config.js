@@ -13,13 +13,6 @@ export default defineConfig({
     fs: {
       // Allow serving files from the project root and node_modules
       allow: ['..', join(__dirname, 'node_modules')]
-    },
-    proxy: {
-      '/PSD-files': {
-        target: 'http://localhost:3001',
-        changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/PSD-files/, '/psd')
-      }
     }
   },
   assetsInclude: ['**/*.psd'],

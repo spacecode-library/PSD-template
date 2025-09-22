@@ -6,6 +6,9 @@
     "primaryColor": "#2C3E50",
     "preview": null,
     "psdFile": "8039429.psd",
+    "psdFileSize": 23040002,
+    "available": false,
+    "unavailableReason": "Large file size (22MB) causes loading issues",
     "features": ["Modern Design", "Photo Area", "Clean Layout", "Professional Look"],
     "colors": {
       "primary": "#2C3E50",
@@ -33,6 +36,8 @@
     "primaryColor": "#4A5568",
     "preview": null,
     "psdFile": "39690114_8731898.psd",
+    "psdFileSize": 6790281,
+    "available": true,
     "features": ["Clean Design", "Flexible Layout", "Image Areas", "Typography"],
     "colors": {
       "primary": "#4A5568",
@@ -59,6 +64,9 @@
     "primaryColor": "#9B59B6",
     "preview": null,
     "psdFile": "7209489.psd",
+    "psdFileSize": 35614886,
+    "available": false,
+    "unavailableReason": "Large file size (34MB) causes loading issues",
     "features": ["Bold Colors", "Creative Layout", "Multiple Images", "Modern Typography"],
     "colors": {
       "primary": "#9B59B6",
@@ -85,6 +93,9 @@
     "primaryColor": "#1A237E",
     "preview": null,
     "psdFile": "8060186.psd",
+    "psdFileSize": 21972171,
+    "available": false,
+    "unavailableReason": "Large file size (21MB) causes loading issues",
     "features": ["Corporate Design", "Professional Layout", "Service Focus", "Contact Section"],
     "colors": {
       "primary": "#1A237E",
@@ -111,6 +122,9 @@
     "primaryColor": "#795548",
     "preview": null,
     "psdFile": "5248770.psd",
+    "psdFileSize": 22623868,
+    "available": false,
+    "unavailableReason": "Large file size (22MB) causes loading issues",
     "features": ["Vintage Aesthetic", "Decorative Elements", "Classic Typography", "Warm Colors"],
     "colors": {
       "primary": "#795548",
@@ -136,6 +150,7 @@
     "primaryColor": "#20B2AA",
     "preview": null,
     "psdFile": null,
+    "available": true,
     "features": ["Bold Headers", "Service List", "Contact Info", "Call to Action"],
     "colors": {
       "primary": "#20B2AA",
