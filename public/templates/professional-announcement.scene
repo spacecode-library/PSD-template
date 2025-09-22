@@ -1,0 +1,75 @@
+{
+  "version": "1.0.0",
+  "scenes": [
+    {
+      "id": "scene",
+      "children": [
+        {
+          "id": "page",
+          "type": "//ly.img.ubq/page",
+          "properties": {
+            "width": 5.3,
+            "height": 5.5,
+            "unit": "inch"
+          },
+          "children": [
+            {
+              "id": "background",
+              "type": "//ly.img.ubq/graphic",
+              "properties": {
+                "position": { "x": 0, "y": 0 },
+                "size": { "width": 5.3, "height": 5.5 },
+                "fill": {
+                  "enabled": true,
+                  "color": { "r": 0.93, "g": 0.94, "b": 0.95, "a": 1 }
+                }
+              }
+            },
+            {
+              "id": "header",
+              "type": "//ly.img.ubq/graphic",
+              "properties": {
+                "position": { "x": 0, "y": 0 },
+                "size": { "width": 5.3, "height": 1.5 },
+                "fill": {
+                  "enabled": true,
+                  "color": { "r": 0.17, "g": 0.24, "b": 0.31, "a": 1 }
+                }
+              }
+            },
+            {
+              "id": "businessName",
+              "type": "//ly.img.ubq/text",
+              "properties": {
+                "position": { "x": 0.25, "y": 0.5 },
+                "size": { "width": 4.8, "height": 0.5 },
+                "text": {
+                  "text": "{{businessName}}",
+                  "fontSize": 28,
+                  "fontWeight": "bold",
+                  "horizontalAlignment": "center",
+                  "color": { "r": 1, "g": 1, "b": 1, "a": 1 }
+                }
+              }
+            },
+            {
+              "id": "offerAmount",
+              "type": "//ly.img.ubq/text",
+              "properties": {
+                "position": { "x": 0.25, "y": 3.9 },
+                "size": { "width": 4.8, "height": 0.8 },
+                "text": {
+                  "text": "{{offerAmount}}",
+                  "fontSize": 80,
+                  "fontWeight": "bold",
+                  "horizontalAlignment": "center",
+                  "color": { "r": 0.91, "g": 0.30, "b": 0.24, "a": 1 }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

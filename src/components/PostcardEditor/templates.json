@@ -1,0 +1,158 @@
+[
+  {
+    "id": "professional-announcement",
+    "name": "Professional Announcement",
+    "description": "Ideal for real estate, home services, or professional announcements",
+    "primaryColor": "#2C3E50",
+    "preview": null,
+    "psdFile": "8039429.psd",
+    "features": ["Modern Design", "Photo Area", "Clean Layout", "Professional Look"],
+    "colors": {
+      "primary": "#2C3E50",
+      "secondary": "#E74C3C",
+      "accent": "#3498DB",
+      "text": "#2C3E50",
+      "background": "#ECF0F1"
+    },
+    "editableElements": [
+      "businessName",
+      "headline",
+      "offerAmount",
+      "offerDescription",
+      "phone",
+      "website",
+      "callToAction",
+      "logo",
+      "mainImage"
+    ]
+  },
+  {
+    "id": "modern-postcard",
+    "name": "Modern Postcard",
+    "description": "Contemporary design for any business or service",
+    "primaryColor": "#4A5568",
+    "preview": null,
+    "psdFile": "39690114_8731898.psd",
+    "features": ["Clean Design", "Flexible Layout", "Image Areas", "Typography"],
+    "colors": {
+      "primary": "#4A5568",
+      "secondary": "#ED8936",
+      "accent": "#48BB78",
+      "text": "#2D3748",
+      "background": "#F7FAFC"
+    },
+    "editableElements": [
+      "businessName",
+      "headline",
+      "bodyText",
+      "phone",
+      "website",
+      "callToAction",
+      "logo",
+      "images"
+    ]
+  },
+  {
+    "id": "creative-design",
+    "name": "Creative Design",
+    "description": "Eye-catching design for creative businesses and agencies",
+    "primaryColor": "#9B59B6",
+    "preview": null,
+    "psdFile": "7209489.psd",
+    "features": ["Bold Colors", "Creative Layout", "Multiple Images", "Modern Typography"],
+    "colors": {
+      "primary": "#9B59B6",
+      "secondary": "#E91E63",
+      "accent": "#00BCD4",
+      "text": "#34495E",
+      "background": "#FFFFFF"
+    },
+    "editableElements": [
+      "businessName",
+      "headline",
+      "tagline",
+      "services",
+      "contact",
+      "website",
+      "socialMedia",
+      "images"
+    ]
+  },
+  {
+    "id": "corporate-professional",
+    "name": "Corporate Professional",
+    "description": "Professional template for corporate services and consulting",
+    "primaryColor": "#1A237E",
+    "preview": null,
+    "psdFile": "8060186.psd",
+    "features": ["Corporate Design", "Professional Layout", "Service Focus", "Contact Section"],
+    "colors": {
+      "primary": "#1A237E",
+      "secondary": "#FFA726",
+      "accent": "#42A5F5",
+      "text": "#263238",
+      "background": "#FAFAFA"
+    },
+    "editableElements": [
+      "companyName",
+      "headline",
+      "services",
+      "benefits",
+      "contactInfo",
+      "website",
+      "logo",
+      "backgroundImage"
+    ]
+  },
+  {
+    "id": "vintage-style",
+    "name": "Vintage Style",
+    "description": "Classic vintage design for boutiques and specialty shops",
+    "primaryColor": "#795548",
+    "preview": null,
+    "psdFile": "5248770.psd",
+    "features": ["Vintage Aesthetic", "Decorative Elements", "Classic Typography", "Warm Colors"],
+    "colors": {
+      "primary": "#795548",
+      "secondary": "#FF5722",
+      "accent": "#FFC107",
+      "text": "#5D4037",
+      "background": "#FFF8E1"
+    },
+    "editableElements": [
+      "shopName",
+      "tagline",
+      "specialOffer",
+      "hours",
+      "location",
+      "phone",
+      "decorativeText"
+    ]
+  },
+  {
+    "id": "business-services",
+    "name": "Business Services",
+    "description": "Perfect for service businesses like laundry, cleaning, or maintenance",
+    "primaryColor": "#20B2AA",
+    "preview": null,
+    "psdFile": null,
+    "features": ["Bold Headers", "Service List", "Contact Info", "Call to Action"],
+    "colors": {
+      "primary": "#20B2AA",
+      "secondary": "#FFC107",
+      "accent": "#FF6B6B",
+      "text": "#333333",
+      "background": "#FFFFFF"
+    },
+    "editableElements": [
+      "businessName",
+      "headline",
+      "subheadline",
+      "services",
+      "phone",
+      "website",
+      "callToAction",
+      "logo"
+    ]
+  }
+]

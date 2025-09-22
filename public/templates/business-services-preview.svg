@@ -1,0 +1,32 @@
+<svg width="530" height="550" viewBox="0 0 530 550" xmlns="http://www.w3.org/2000/svg">
+  <!-- White Background -->
+  <rect width="530" height="550" fill="#ffffff"/>
+  
+  <!-- Teal Header -->
+  <rect width="530" height="180" fill="#17A2B8"/>
+  
+  <!-- Header Text -->
+  <text x="265" y="60" font-family="Arial, sans-serif" font-size="32" font-weight="normal" fill="white" text-anchor="middle">DROP OFF YOUR</text>
+  <text x="265" y="130" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="white" text-anchor="middle">DRY CLEANING!</text>
+  
+  <!-- Service Boxes -->
+  <rect x="20" y="230" width="240" height="50" fill="#FFC107" rx="5"/>
+  <text x="140" y="260" font-family="Arial, sans-serif" font-size="14" fill="black" text-anchor="middle">Free Single Item Cleaning</text>
+  
+  <rect x="270" y="230" width="240" height="50" fill="#FFC107" rx="5"/>
+  <text x="390" y="260" font-family="Arial, sans-serif" font-size="14" fill="black" text-anchor="middle">Free Soap for One Wash</text>
+  
+  <rect x="20" y="300" width="240" height="50" fill="#FFC107" rx="5"/>
+  <text x="140" y="330" font-family="Arial, sans-serif" font-size="14" fill="black" text-anchor="middle">Free Drying on Monday</text>
+  
+  <rect x="270" y="300" width="240" height="50" fill="#FFC107" rx="5"/>
+  <text x="390" y="330" font-family="Arial, sans-serif" font-size="14" fill="black" text-anchor="middle">Free Folding for 10 Items</text>
+  
+  <!-- Bottom Section -->
+  <rect y="430" width="530" height="120" fill="#333333"/>
+  
+  <!-- Bottom Text -->
+  <text x="265" y="470" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white" text-anchor="middle">ABC LAUNDRY</text>
+  <text x="265" y="500" font-family="Arial, sans-serif" font-size="16" fill="#FFC107" text-anchor="middle">CALL OR VISIT US TODAY!</text>
+  <text x="265" y="525" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">1-800-628-1804 • www.abclaundry.com</text>
+</svg>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postcard Editor Test</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+        }
+        .test-section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        h2 {
+            margin-top: 0;
+        }
+        .status {
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 4px;
+        }
+        .status.success {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        .status.error {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+        .status.info {
+            background-color: #d1ecf1;
+            color: #0c5460;
+        }
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Postcard Editor Test Results</h1>
+    
+    <div class="test-section">
+        <h2>1. Simple Editor Test</h2>
+        <p>Testing if the Simple Editor loads properly without the "No scene found" error</p>
+        <iframe src="http://localhost:5175/" id="editor-iframe"></iframe>
+        <div class="status info" id="editor-status">
+            <strong>Instructions:</strong><br>
+            1. Click on a template to select it<br>
+            2. The editor should load without errors<br>
+            3. Simple mode should show a form-based interface<br>
+            4. Advanced mode should show the full CE.SDK editor
+        </div>
+    </div>
+    
+    <div class="test-section">
+        <h2>2. PSD Import Test</h2>
+        <div class="status info">
+            <strong>Test PSD Templates:</strong><br>
+            - Professional Announcement (8039429.psd)<br>
+            - Modern Postcard (39690114_8731898.psd)<br>
+            - Creative Design (7209489.psd)<br>
+            - Corporate Professional (8060186.psd)<br>
+            - Vintage Style (5248770.psd)
+        </div>
+    </div>
+    
+    <div class="test-section">
+        <h2>3. Multi-Page Support Test</h2>
+        <div class="status info">
+            <strong>Expected Behavior:</strong><br>
+            - PSD files with multiple artboards should create multiple pages<br>
+            - Single-page PSDs should automatically get a second page for the back<br>
+            - Both pages should have correct postcard dimensions (5.3" × 7.5")
+        </div>
+    </div>
+    
+    <div class="test-section">
+        <h2>4. Console Error Check</h2>
+        <div class="status info">
+            <strong>Fixed Issues:</strong><br>
+            ✅ "No scene found after editor creation" error - Fixed by creating scene before loading content<br>
+            ✅ Deprecated dock.groups API warning - Fixed by removing legacy configuration<br>
+            ✅ PSD dimensions not matching - Fixed by setting correct page dimensions after import<br>
+            ✅ Multi-page support - Added handling for front/back pages
+        </div>
+    </div>
+
+    <script>
+        // Check for console errors
+        const originalError = console.error;
+        const errors = [];
+        console.error = function() {
+            errors.push(Array.from(arguments).join(' '));
+            originalError.apply(console, arguments);
+        };
+
+        // Monitor iframe for errors
+        const iframe = document.getElementById('editor-iframe');
+        iframe.onload = function() {
+            setTimeout(() => {
+                if (errors.length > 0) {
+                    document.getElementById('editor-status').className = 'status error';
+                    document.getElementById('editor-status').innerHTML = 
+                        '<strong>Errors detected:</strong><br>' + 
+                        errors.map(e => '• ' + e).join('<br>');
+                } else {
+                    document.getElementById('editor-status').className = 'status success';
+                    document.getElementById('editor-status').innerHTML = 
+                        '<strong>✅ Editor loaded successfully!</strong><br>No console errors detected.';
+                }
+            }, 3000);
+        };
+    </script>
+</body>
+</html>

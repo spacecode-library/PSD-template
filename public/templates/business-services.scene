@@ -1,0 +1,75 @@
+{
+  "version": "1.0.0",
+  "scenes": [
+    {
+      "id": "scene",
+      "children": [
+        {
+          "id": "page",
+          "type": "//ly.img.ubq/page",
+          "properties": {
+            "width": 5.3,
+            "height": 5.5,
+            "unit": "inch"
+          },
+          "children": [
+            {
+              "id": "background",
+              "type": "//ly.img.ubq/graphic",
+              "properties": {
+                "position": { "x": 0, "y": 0 },
+                "size": { "width": 5.3, "height": 5.5 },
+                "fill": {
+                  "enabled": true,
+                  "color": { "r": 1, "g": 1, "b": 1, "a": 1 }
+                }
+              }
+            },
+            {
+              "id": "header",
+              "type": "//ly.img.ubq/graphic",
+              "properties": {
+                "position": { "x": 0, "y": 0 },
+                "size": { "width": 5.3, "height": 1.8 },
+                "fill": {
+                  "enabled": true,
+                  "color": { "r": 0.09, "g": 0.64, "b": 0.72, "a": 1 }
+                }
+              }
+            },
+            {
+              "id": "headline",
+              "type": "//ly.img.ubq/text",
+              "properties": {
+                "position": { "x": 0.25, "y": 0.3 },
+                "size": { "width": 4.8, "height": 0.4 },
+                "text": {
+                  "text": "{{headline}}",
+                  "fontSize": 36,
+                  "fontWeight": "normal",
+                  "horizontalAlignment": "center",
+                  "color": { "r": 1, "g": 1, "b": 1, "a": 1 }
+                }
+              }
+            },
+            {
+              "id": "subheadline",
+              "type": "//ly.img.ubq/text",
+              "properties": {
+                "position": { "x": 0.25, "y": 0.7 },
+                "size": { "width": 4.8, "height": 0.8 },
+                "text": {
+                  "text": "{{subheadline}}",
+                  "fontSize": 72,
+                  "fontWeight": "bold",
+                  "horizontalAlignment": "center",
+                  "color": { "r": 1, "g": 1, "b": 1, "a": 1 }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

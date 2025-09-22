@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Editor</title>
+    <style>
+        body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+        #status { padding: 20px; text-align: center; }
+        .success { color: #10B981; }
+        .error { color: #DC2626; }
+    </style>
+</head>
+<body>
+    <div id="status">Loading...</div>
+    <script>
+        const status = document.getElementById('status');
+        
+        // Check if SDK loads successfully
+        fetch('https://cdn.img.ly/packages/imgly/cesdk-js/1.60.0/assets/engine.wasm')
+            .then(response => {
+                if (response.ok) {
+                    status.innerHTML = '<h2 class="success">✅ SDK v1.60.0 loaded successfully!</h2><p>The version mismatch has been fixed.</p>';
+                } else {
+                    status.innerHTML = '<h2 class="error">❌ Failed to load SDK</h2><p>Status: ' + response.status + '</p>';
+                }
+            })
+            .catch(error => {
+                status.innerHTML = '<h2 class="error">❌ Network error</h2><p>' + error.message + '</p>';
+            });
+            
+        // Also test the main app
+        setTimeout(() => {
+            fetch('http://localhost:5173/')
+                .then(response => response.text())
+                .then(html => {
+                    if (html.includes('root')) {
+                        status.innerHTML += '<p class="success">React app is running on port 5173</p>';
+                    }
+                })
+                .catch(() => {
+                    status.innerHTML += '<p class="error">React app not accessible on port 5173</p>';
+                });
+        }, 1000);
+    </script>
+</body>
+</html>

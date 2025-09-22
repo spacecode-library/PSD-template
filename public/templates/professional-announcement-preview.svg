@@ -1,0 +1,23 @@
+<svg width="530" height="550" viewBox="0 0 530 550" xmlns="http://www.w3.org/2000/svg">
+  <!-- Light Background -->
+  <rect width="530" height="550" fill="#ECF0F1"/>
+  
+  <!-- Dark Blue Header -->
+  <rect width="530" height="150" fill="#2C3E50"/>
+  
+  <!-- Business Name -->
+  <text x="265" y="85" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="white" text-anchor="middle">YOUR BUSINESS NAME</text>
+  
+  <!-- Image Placeholder -->
+  <rect x="25" y="170" width="480" height="200" fill="#BDC3C7" rx="8"/>
+  <text x="265" y="280" font-family="Arial, sans-serif" font-size="16" fill="#7F8C8D" text-anchor="middle">Property Image</text>
+  
+  <!-- Offer Amount -->
+  <text x="265" y="450" font-family="Arial, sans-serif" font-size="80" font-weight="bold" fill="#E74C3C" text-anchor="middle">$25 OFF</text>
+  
+  <!-- Offer Description -->
+  <text x="265" y="490" font-family="Arial, sans-serif" font-size="18" fill="#2C3E50" text-anchor="middle">Your First Service</text>
+  
+  <!-- Contact Info -->
+  <text x="265" y="530" font-family="Arial, sans-serif" font-size="14" fill="#7F8C8D" text-anchor="middle">1-800-000-0000 • www.yourwebsite.com</text>
+</svg>

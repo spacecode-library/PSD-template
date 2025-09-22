@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test PSD Files</title>
+</head>
+<body>
+    <h1>Testing PSD File Access</h1>
+    <script>
+        // Test if PSD files are accessible
+        fetch('/PSD-files/5248770.psd')
+            .then(response => {
+                console.log('PSD file response:', response.status);
+                if (response.ok) {
+                    console.log('PSD file is accessible!');
+                } else {
+                    console.error('PSD file not found');
+                }
+            })
+            .catch(err => console.error('Error accessing PSD:', err));
+    </script>
+</body>
+</html>
